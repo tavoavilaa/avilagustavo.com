@@ -1,0 +1,133 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+const posts = (await getCollection("blog")).sort(
+  (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900">
+  <div class="bg-white dark:bg-gray-900 max-w-screen-xl mx-auto border  border-gray-200 dark:border-gray-800">
+    <Header title={SITE_TITLE} />
+    <main class="max-w-screen-lg mx-auto">
+      <section class="relative mt-16 px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+              <lottie-player src="https://lottie.host/3965a178-72dc-4fd1-955d-2f0b417d039d/wk7NOWRcfU.json" background="transparent" speed="1" style="width: 100%;" loop autoplay></lottie-player>
+          </div>
+          <div class="lg:order-first lg:row-span-2 mt-32">
+            <h1 class="text-6xl font-bold tracking-tight dark:text-white">
+              Gustavo Avila
+            </h1>
+            <div class="mt-2 text-base leading-8 text-gray-600 dark:text-white">
+              <p>
+                 Diseñador UX/UI y Desarrollador Frontend
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+                <button
+                  type="button"
+                  class="text-white hover:text-gray-900 bg-tiber-900 border border-gray-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 transition-all ease-in"
+                  >Curriculum</button
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="max-w-screen-lg mx-auto mb-16">
+
+      <div class="grid grid-cols-1 md:grid-cols-2  gap-10 place-items-center mt-12 ">
+
+        {
+          posts.map((post) => (
+          <div>
+          <div
+          class="max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href={`/blog/${post.slug}/`}>
+            <img class="rounded-t-lg" src={post.data.heroImage} alt="" />
+          </a>
+          <div class="p-5">
+              {
+                post.data.category == 'Frontend' 
+                ?  <span class="bg-tiber-100 text-tiber-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-tiber-400 mb-2">
+                    <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"/>
+                    </svg>
+                    {post.data.category}
+                </span>
+
+                :  <span class="bg-spring-green-100 text-spring-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-spring-green-400 mb-2">
+                    <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                        <path d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z"/>
+                    </svg>
+                    {post.data.category}
+                </span>
+              }
+      
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                {post.data.title}
+            </h5>
+            <p class="mb-4 text-sm font-normal text-gray-700 dark:text-gray-400">
+                {post.data.description}
+            </p>
+            <a
+              href={`/blog/${post.slug}/`}
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </div>
+          ))
+        }
+
+     
+       
+
+
+
+      </div>
+
+
+    </section>
+
+
+    
+    
+    
+  
+
+    <Footer />
+  </div>
+  </body>
+</html>
