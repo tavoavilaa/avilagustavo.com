@@ -81,11 +81,7 @@ body {
     animation: zoomInOut 5s infinite;
 }
 
-@media (max-width: 768px) {
-	.flare{
-		display: none;
-	}
-}
+
 
 .pulsate-bck {
 	-webkit-animation: pulsate-bck 4s ease-in-out infinite both;
