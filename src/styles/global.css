@@ -4,9 +4,9 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
 :root {
 	--accent: #2337ff;
@@ -113,7 +113,50 @@ textarea{
 
 
 
+.blogLayout h1{
+	font-size: 2.5rem !important;
+	line-height: 1 !important;
+	margin: 12px 0;
+	font-weight: bold;
+}
+.blogLayout h2{
+	font-size: 2rem !important;
+	line-height: 2.5rem !important;
+	margin: 12px 0;
+	font-weight: 600;
+}
+.blogLayout h3{
+	font-size: 1.675rem !important;
+	line-height: 2.25rem !important;
+	margin: 12px 0;
+}
+.blogLayout h4{
+	font-size: 1.5rem !important;
+	line-height: 2rem !important;
+	margin: 12px 0;
+}
+.blogLayout h5{
+	font-size: 1.25rem !important;
+	line-height: 1.75rem !important;
+	margin: 12px 0;
+}
+.blogLayout h6{
+	font-size: 1.125rem !important;
+	line-height: 1.75rem !important;
+	margin: 12px 0;
 
+}
+.blogLayout pre{
+	padding: 1.5rem;
+	margin: 1.5rem 0;
+
+}
+
+.blogLayout p{
+	max-width: 80ch !important;
+	line-height: 1.8rem !important;
+
+}
 
 
 

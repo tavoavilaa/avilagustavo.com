@@ -3,12 +3,13 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Form from '../components/Form.astro';
+import FabTop from '../components/FabTop.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, url, heroImage } = Astro.props;
 ---
 
 <html lang="en">
@@ -17,12 +18,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 	<body class="bg-gray-50 dark:bg-gray-900 relative">
-		<button id="topBtn" type="button" class="transition-all duration-75 delay-0 ease-in-out text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm p-2 text-center">
-			<svg class="w-4 h-4 text-xs text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-			  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
-			</svg>
-			<span class="sr-only">Icon description</span>
-		  </button>
+		
+		<FabTop/>
 		<div class="bg-white dark:bg-gray-900 max-w-screen-xl mx-auto border  border-gray-200 dark:border-gray-800">
 			<Header />
 		<main class="max-w-screen-lg mx-auto">
@@ -32,10 +29,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				</div>
 				<div class="prose">
 					<div class="title mt-8">
-						<h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">{title}</h2>
+						<div class="flex justify-between items-center">
+							<h2 class="text-gray-900 dark:text-white text-4xl font-extrabold mb-2">{title}</h2>
+						</div>
 						<hr class="dark:border-gray-800"/>
 					</div>
-					<div class="mt-4 text-lg font-normal text-gray-500 dark:text-gray-200">
+					<div class="blogLayout mt-4 text-lg font-normal text-gray-900 dark:text-gray-50">
 						<slot />
 					</div>
 				</div>

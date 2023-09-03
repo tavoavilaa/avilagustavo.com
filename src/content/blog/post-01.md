@@ -1,35 +1,19 @@
 ---
-title: 'Blog 1'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: '¿Es el pixel perfect una mentira?'
+description: '¿Se puede realmente lograr el pixel perfect? Pensamientos y propuestas sobre cómo mejorar nuestros métodos de diseño y programación mediante el uso de las herramientas de interfaz de usuario.'
 pubDate: 'Jan 01 2021'
-heroImage: '/PokeGame.jpg'
+heroImage: '/pixel-perfect.jpg'
 category: 'Frontend'
 url: 'https://chic-belekoy-9dad76.netlify.app/'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+> Mi carrera en diseño web comenzó en 2018. En ese momento y por muchos años anteriores, se usaba **Photoshop** e **Illustrator** para el diseño de interfaces, sí, la misma herramienta utilizada para la edición de fotos y gráficos vectoriales se empleaba para diseñar páginas web. Con esta herramienta, exportaba imágenes que luego se pasaban al equipo de desarrollo, quienes hacían la programación. Sin embargo, siempre parecía que la implementación no coincidía exactamente con lo que yo había diseñado, lo cual resultaba muy frustrante. Incapaz de comprender la razón detrás de esto, **decidí aprender a programar para abordar el problema de raíz**. <br><br>
 
-## Headings
+> A medida que mejoraba mis habilidades de programación, me di cuenta de que el enfoque convencional de diseñar imágenes estáticas no se adaptaba bien a la naturaleza dinámica de la web. **¿Por qué estábamos diseñando imágenes estáticas cuando la web era dinámica?** **¿Por qué no podía diseñar un botón que se adaptara automáticamente a su contenido en lugar de ajustar manualmente los márgenes?** ¿Por qué mis diseños no se adaptaban al ancho de la pantalla con estilos relativos, como lo hacían cuando programaba? ¿Por qué parecía que diseñaba con "position: absolute;"? <br><br>
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+> La llegada de Sketch en 2014 fue un cambio de juego para los diseñadores, ya que permitía una creación más eficiente de interfaces de usuario. Sin embargo, la desconexión entre el diseño y el desarrollo persistía. <br><br>
 
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+> En 2017, Figma apareció como una alternativa a Sketch, destacando por su colaboración en tiempo real y su historial de versiones. Aunque hubo mejoras significativas, aún se necesita un control de versiones más sólido y una API más potente para una integración más eficaz entre el diseño y el desarrollo.
 
 ## Images
 

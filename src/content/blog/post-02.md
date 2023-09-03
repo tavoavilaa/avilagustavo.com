@@ -1,8 +1,8 @@
 ---
-title: 'Blog 2'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: 'El unico curso de frontend que necesitas'
+description: 'Descubrá lo que necesita para convertirse en un desarrollador front-end certificado, cuánto tiempo tarda en perfeccionar sus capacidades y cuánto dinero tiene que invertir.'
 pubDate: 'Dec 11 2019'
-heroImage: '/paygo.png'
+heroImage: '/meta-course-frontend.jpg'
 category: 'UX/UI'
 url: 'https://projects.invisionapp.com/share/AGWXK3XRWH6#/screens'
 ---

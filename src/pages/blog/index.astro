@@ -27,7 +27,7 @@ const posts = (await getCollection('blog')).sort(
 <section class="max-w-screen-lg mx-auto mt-8">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16  relative">
         <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-green-700 bg-spring-green-100 rounded-full dark:bg-green-900 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-800">
-            <span class="text-xs transition-all duration-75 delay-0 ease-in-out text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800  dark:shadow-lg dark:shadow-green-800/80 rounded-full  px-4 py-1.5 mr-3">Nuevo</span> <span class="text-sm font-medium">Herramientas para diseñar mejores productos</span> 
+            <span class="text-xs transition-all duration-75 delay-0 ease-in-out text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800  dark:shadow-lg dark:shadow-green-800/80 rounded-full  px-4 py-1.5 mr-3">Nuevo</span> <span class="text-sm font-medium">Templates para tu portafolio web</span> 
             <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
@@ -37,15 +37,15 @@ const posts = (await getCollection('blog')).sort(
 			Suscríbete a mi newsletter para notificarte cada vez que saque un nuevo artículo sobre diseño, desarrollo o proyectos personales.
 		</p>
         <form name="subscribe" method="POST" data-netlify="true" class="w-full max-w-md mx-auto">   
-            <label for="default-email" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Email sign-up</label>
+            <label for="default-email" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Correo</label>
             <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                <div class="mb-1 absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                     <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
                         <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
                         <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                     </svg>
                 </div>
-                <input name="subscribe" type="email" id="default-email" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-green-500 focus:border-green-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Escribe tu correo electrónico" required>
+                <input name="subscribe" type="email" id="default-email" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-green-500 focus:border-green-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Escribe tu correo" required>
                 <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4  focus:ring-green-300 dark:focus:ring-green-800  dark:shadow-lg dark:shadow-green-800/80 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 ">Subscribirme</button>
             </div>
         </form>
@@ -57,7 +57,6 @@ const posts = (await getCollection('blog')).sort(
 					
 					{
 						posts.map((post) => (
-						<div>
 						<div
 						class="max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
 					  >
@@ -65,52 +64,28 @@ const posts = (await getCollection('blog')).sort(
 						  <img class="rounded-t-lg" src={post.data.heroImage} alt={post.data.title} />
 						</a>
 						<div class="p-5">
-							{
-							  post.data.category == 'Frontend' 
-							  ?  <span class="bg-tiber-100 text-tiber-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-tiber-400 mb-2">
-								  <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-									  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"/>
-								  </svg>
-								  {post.data.category}
-							  </span>
-				
-							  :  <span class="bg-spring-green-100 text-spring-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-spring-green-400 mb-2">
-								  <svg class="w-2.5 h-2.5 mr-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
-									  <path d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z"/>
-								  </svg>
-								  {post.data.category}
-							  </span>
-							}
-					
+							
+							<p class="text-sm text-gray-400 mb-2">
+							<FormattedDate date={post.data.pubDate} />
+							</p>
 							<h5
 							  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
 							>
 							  {post.data.title}
 						  </h5>
-						  <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">
+						
+						  <p class="h-24 mb-4 text-base font-normal text-gray-700 dark:text-gray-400">
 							  {post.data.description}
 						  </p>
-					 
-						  <a 
-						  href={post.data.url}
-						  target="_blank"
-						  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 via-green-500 to-green-600 group-hover:from-green-400 group-hover:to-green-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-green-500/50 transition-all duration-75 delay-0 ease-in-out">
-							<span class="inline-flex items-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
-								Ver demo
-							</span>
-						  </a>
-				
-						  <a 
-						  href={`/blog/${post.slug}/`}
-						  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 via-green-500 to-green-600 group-hover:from-green-400 group-hover:to-green-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-green-500/50 transition-all duration-75 delay-0 ease-in-out">
-							<span class="inline-flex items-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
-								Ver más
-							</span>
-						  </a>
+						  
+			
+
+							<a href={`/blog/${post.slug}/`} type="button" class="border border-gray-300 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-5 py-2.5">
+								Leer artículo
+								</a>  
 						  
 						</div>
 						</div>
-					  </div>
 						))
 					  }
 				</div>
