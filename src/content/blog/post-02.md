@@ -1,9 +1,10 @@
 ---
-title: 'PayGo Prototype'
+title: 'Blog 2'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Dec 11 2019'
 heroImage: '/paygo.png'
 category: 'UX/UI'
+url: 'https://projects.invisionapp.com/share/AGWXK3XRWH6#/screens'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

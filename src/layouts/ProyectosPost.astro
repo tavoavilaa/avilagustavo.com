@@ -2,11 +2,10 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Form from '../components/Form.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'proyectos'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
@@ -33,34 +32,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="prose">
 					<div class="title mt-8">
 						<h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">{title}</h2>
-						<hr class="dark:border-gray-800"/>
+						<hr />
 					</div>
-					<div class="mt-4 text-lg font-normal text-gray-500 dark:text-gray-200">
+					<div class="mt-4 dark:text-gray-400">
 						<slot />
 					</div>
 				</div>
 			</article>
 		</main>
-		<br>
-		<hr class="dark:border-gray-800">
-		<section class="max-w-screen-lg mx-auto relative mt-16 px-6">
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-			  <div class="lg:order-first lg:row-span-2 lg:mt-32">
-				<h2 class="text-5xl font-bold tracking-tight dark:text-white">
-				  Contáctame
-				</h2>
-				<div class="mt-2 text-base leading-8 text-gray-600 dark:text-white">
-				  <p class="mb-4 leading-normal">
-					Si te gustó mi experiencia, me encantaría que me envíaras un mensaje con tu propuesta o idea.
-				  </p>
-				</div>
-			  </div>
-			  <div>
-				<Form/>
-			  </div>
-			 
-			</div>
-		  </section>
 		<Footer />
 		</div>
 	</body>

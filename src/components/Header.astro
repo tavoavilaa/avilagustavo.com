@@ -5,25 +5,21 @@ import { SITE_TITLE } from '../consts';
 
 <header class="pt-4">
 
-<nav class="max-w-5xl mx-auto relative px-4 py-1 bg-white dark:bg-gray-900 shadow-md sm:rounded-3xl   border border-gray-200 dark:border-gray-800">
+<nav class="navbar max-w-5xl mx-auto relative z-10 px-4 py-1 bg-white dark:bg-gray-900 shadow-md sm:rounded-3xl   border border-gray-200 dark:border-gray-800">
 	<div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-2">
-	<a href="https://flowbite.com/" class="flex items-center">
+	<a href="/" class="flex items-center">
 		<img src="/logo-g.png" class="h-12 h mr-3 rounded-full" alt="Gustavo Logo" />
 	</a>
-	<div class="flex md:order-2">
-		<div>
-			<button
-			type="button"
-			class="text-white hover:text-gray-900 bg-tiber-900 border border-gray-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 transition-all ease-in"
-			>Curriculum</button
-		  >
+	<div class="flex md:order-2 items-center">
+		<a href="#form"
+            type="button" class="transition-all duration-100 delay-100 ease-in text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2">Contactar</a>
+
 			<button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
 			  <span class="sr-only">Open main menu</span>
 			  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
 				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
 			  </svg>
 		  </button>
-		</div>
 		<div class="ms-4">
 			<button id="theme-toggle" type="button" class="border border-gray-300 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
 				<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -46,7 +42,22 @@ import { SITE_TITLE } from '../consts';
 	</div>
 	</div>
   </nav>
-  
-	
 </header>
+
+<style>
+
+.navDown{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 111;
+	transition: all .3s ease;
+	border-radius: 0 0 1.5rem 1.5rem !important;
+	opacity: .96;
+	z-index: 100;
+}
+</style>
+
+
 

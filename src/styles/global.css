@@ -33,6 +33,11 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
@@ -45,3 +50,68 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+
+
+#topBtn{
+	position: fixed;
+	bottom: 0;
+	right: 2%;
+	z-index: 1;
+	margin-bottom: 1.25rem;
+}
+
+.bg-grid{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: top;
+}
+
+@media (prefers-color-scheme: dark) {
+	.flare{
+	z-index: 0;
+    width: 600px;
+    height: 600px;
+    opacity: 0.2;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    background: #009664;
+    -webkit-animation: zoomInOut 5s infinite;
+    animation: zoomInOut 5s infinite;
+}
+
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 4s ease-in-out infinite both;
+	        animation: pulsate-bck 4s ease-in-out infinite both;
+}
+
+
+
+
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+}
+
+textarea{
+	resize:none !important;
+}
+
+
+
+
+
