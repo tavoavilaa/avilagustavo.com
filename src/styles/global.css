@@ -66,8 +66,7 @@ body {
 		background-position: top;
 }
 
-@media (prefers-color-scheme: dark) {
-	.flare{
+.flare{
 	z-index: 0;
     width: 600px;
     height: 600px;
@@ -80,6 +79,12 @@ body {
     background: #009664;
     -webkit-animation: zoomInOut 5s infinite;
     animation: zoomInOut 5s infinite;
+}
+
+@media (max-width: 768px) {
+	.flare{
+		display: none;
+	}
 }
 
 .pulsate-bck {
@@ -104,7 +109,6 @@ body {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
 }
 
 textarea{
