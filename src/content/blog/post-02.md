@@ -1,216 +1,60 @@
 ---
-title: 'El unico curso de frontend que necesitas'
-description: 'Descubrá lo que necesita para convertirse en un desarrollador front-end certificado, cuánto tiempo tarda en perfeccionar sus capacidades y cuánto dinero tiene que invertir.'
-pubDate: 'Dec 11 2019'
+title: 'El unico curso de frontend que necesitas para comenzar tu carrera'
+description: 'Vamos a echar una ojeada más de cerca al Certificado de Desarrollador Meta Frontend.
+Esta enseña a los alumnos en todo el proceso del desarrollo frontend, desde CSS, HTML5 y JavaScript hasta la preparación de entrevistas.'
+pubDate: 'Dec 11 2022'
 heroImage: '/meta-course-frontend.jpg'
 category: 'UX/UI'
 url: 'https://projects.invisionapp.com/share/AGWXK3XRWH6#/screens'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
-## Headings
+## ¿Qué es la Certificación de Desarrollador Meta Front-End?
+La certificación profesional de desarrollador front-end de Meta es una solución para principiantes que buscan continuar una reinventar su carrera hacia el desarrollo front-end.
+Elaborado por Meta (anteriormente **Facebook**) y ofrecido por **Coursera**, el programa se divide en 9 cursos específicos.
+Esta capacitación para desarrolladores les enseña a los alumnos de qué forma hacer websites receptivos utilizando una variedad de herramientas, desde **HTML** para estructurar contenido hasta **JavaScript** para las experiencias interactivas.
+Ayuda a los alumnos a obtener las habilidades primordiales para trabajar como desarrolladores front-end en un mercado con un salario promedio de aproximadamente **$86,013** por año.
+Al terminar el curso, los estudiantes van a tener diseños de portafolios completados para presentar en entrevistas para acrecentar su empleabilidad.
+Los alumnos seleccionados asimismo obtienen ingreso a la bolsa de trabajo única de **Meta Career Programs**, una plataforma de búsqueda que conecta a expertos acreditados con mucho más de **200 empleadores**.
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+## ¿Quién debe seguir esta certificación?
 
-# H1
+Esta certificación de Meta no requiere experiencia previa ni un título para empezar. Si alguna vez has tenido interés en crear sitios web, aplicaciones u entornos interactivos para empresas, este programa podría ser adecuado para ti.
 
-## H2
+En particular, este curso te preparará para mejorar el diseño, estilo y apariencia de sitios web y herramientas digitales. Si eres una persona creativa con un enfoque sólido en la experiencia en línea o tienes interés en el diseño visual, la vía de desarrollo front-end podría ser la elección correcta para ti.
 
-### H3
+Después de completar estos 9 cursos, estarás listo para explorar una carrera no solo en desarrollo front-end, sino también en programación a tiempo completo, desarrollo avanzado de bases de datos, desarrollo de software, dispositivos móviles inteligentes y diseño web.
 
-#### H4
+## ¿Que aprenderás?
 
-##### H5
+Diseñado para preparar a cualquier persona para una carrera como desarrollador front-end, este curso abarca todas las habilidades necesarias para crear experiencias en línea visuales y altamente inmersivas.
 
-###### H6
+A lo largo del curso, adquirirás conocimientos fundamentales en codificación en **HTML5**, **CSS** y **JavaScript**, y te familiarizarás con herramientas estándar de la industria como Figma, React y Bootstrap.
 
-## Paragraph
+Los estudiantes exitosos experimentarán los beneficios de utilizar repositorios de GitHub para el control de versiones y sistemas de gestión de contenido. También podrás mejorar tus habilidades de diseño visual utilizando las herramientas de edición en Figma.
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+A través de un proyecto práctico de creación de cartera, podrás demostrar tus nuevas habilidades y crear recursos que serán útiles en tus futuras solicitudes de empleo. El curso también ofrece valiosos consejos para la preparación de entrevistas.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Al completar esta Certificación Misión Front-End, habrás aprendido cómo:
 
-## Images
+- Estructurar tu contenido con **HTML**, gestionar estilos visuales con **CSS** y crear entornos interactivos con **JavaScript**.
+- Utilizar el marco **CSS** Bootstrap para desarrollar sitios web.
+- Destacarte en tus entrevistas de codificación y mostrar tu trabajo a través de un portafolio claro.
+- Utilizar React junto con varios otros marcos y bibliotecas de **JavaScript** para resolver problemas comunes en el desarrollo front-end y mejorar la experiencia del usuario.
 
-#### Syntax
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
+## Inversión de tiempo y certificación:
 
-#### Output
+La duración estimada para completar el Certificado Meta Front-End es de siete meses, estudiando 6 horas por semana, y todo el proceso se puede realizar completamente en línea. Este curso ofrece más de **76 horas** de contenido, impartido a través de vídeos, ejercicios prácticos y materiales escritos. Para obtener la certificación de desarrollador front-end, debes completar los **9 cursos**, incluyendo pruebas y tareas correspondientes.
 
-![blog placeholder](/blog-placeholder-about.jpg)
+## ¿Cuánto cuesta la Certificación Meta Front-End Developer?
+El costo total de conseguir la certificación Misión Front-End es de **$273**.
 
-## Blockquotes
+Coursera proporciona el curso como una parte de la suscripción Coursera Plus, que cuesta **$39** por mes.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+En promedio, toma **7 meses** completar el curso y obtener la certificación.
 
-### Blockquote without attribution
+Coursera ofrece una prueba gratis de **7 días** revise los materiales del curso antes de decidirse por un plan pago.
 
-#### Syntax
+Puedes acceder a la certificación en el siguiente enlace: [Coursera](https://ejemplo.com/ "Certificación Meta Front-End Developer").
 
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
-
-#### Output
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-### Blockquote with attribution
-
-#### Syntax
-
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-#### Syntax
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-#### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-#### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntac, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-Output
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-#### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-#### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
