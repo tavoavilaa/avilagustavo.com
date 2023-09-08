@@ -19,7 +19,7 @@ Uno de los mayores desafíos en el **diseño web** es la diversidad de dispositi
 
 Los diferentes navegadores web interpretan el código de manera ligeramente diferente, lo que puede llevar a discrepancias en la representación de una página. Aunque herramientas de diseño como **Figma** permiten la creación de diseños que se ajustan a las últimas especificaciones y estándares, la variedad de navegadores y versiones aún puede crear desafíos de compatibilidad.
 
-![blog responsive](/diseño-responsive.jpg)
+![blog responsive](/diseno-responsive.jpg)
 
 ## 3. Limitaciones de tiempo y recursos
 
