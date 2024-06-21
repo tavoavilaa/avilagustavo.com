@@ -19,8 +19,12 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	
 	</head>
-	<body class="bg-gray-50 dark:bg-gray-900 ">
-		<div class="bg-grid bg-white dark:bg-gray-900  max-w-screen-xl mx-auto border  border-gray-200 dark:border-gray-800 relative">
+	<body class="bg-spring-green-50 dark:bg-shark-950">
+		<div class="noise"></div>
+		<div class="flare pulsate-bck"></div>
+		<div class="flare2 pulsate-bck"></div>
+		<div class="flare3 pulsate-bck"></div>
+		<div class="bg-grid bg-white dark:bg-shark-950  max-w-screen-xl mx-auto border  border-gray-200 dark:border-gray-800 relative">
 			<Header />
 			<FabTop/>
 
@@ -45,46 +49,44 @@ const posts = (await getCollection('blog')).sort(
                         <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                     </svg>
                 </div>
-                <input name="subscribe" type="email" id="default-email" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-green-500 focus:border-green-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Escribe tu correo" required>
-                <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4  focus:ring-green-300 dark:focus:ring-green-800  dark:shadow-lg dark:shadow-green-800/80 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 ">Subscribirme</button>
+                <input name="subscribe" type="email" id="default-email" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-green-500 focus:border-green-500 dark:bg-shark-900 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Escribe tu correo" required>
+                <button type="submit" class="absolute right-2.5 bottom-2.5 text-gray-900 bg-spring-green-500 hover:bg-spring-green-300 focus:ring-4  focus:ring-green-300 dark:focus:ring-green-800 shadow-sm shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium focus:outline-none rounded-lg text-sm px-4 py-2 ">Subscribirme</button>
             </div>
         </form>
     </div>
 </section>
 
 			<section class="max-w-screen-lg mx-auto py-8">
-				<div class=" grid grid-cols-1 md:grid-cols-2  gap-10 place-items-center mt-12 ">
+				<div class=" grid grid-cols-1 md:grid-cols-2  gap-10 place-items-center mt-12 px-6">
 					
 					{
 						posts.map((post) => (
 						<div
-						class="max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+						class="max-w-full border border-gray-200 rounded-lg shadow bg-white dark:bg-shark-900 dark:border-gray-700"
 					  >
-						<a href={`/blog/${post.slug}/`}>
-						  <img class="rounded-t-lg" src={post.data.heroImage} alt={post.data.title} />
-						</a>
-						<div class="p-5">
+							<a href={`/blog/${post.slug}/`}>
+							<img class="rounded-t-lg" src={post.data.heroImage} alt={post.data.title} />
+							</a>
+							<div class="p-5">
+								
+								<p class="text-sm text-gray-400 mb-2">
+								<FormattedDate date={post.data.pubDate} />
+								</p>
+								<h5
+								class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+								>
+								{post.data.title}
+							</h5>
 							
-							<p class="text-sm text-gray-400 mb-2">
-							<FormattedDate date={post.data.pubDate} />
+							<p class="h-32 md:h-24 mb-4 text-base font-normal text-gray-700 dark:text-gray-400">
+								{post.data.description}
 							</p>
-							<h5
-							  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-							>
-							  {post.data.title}
-						  </h5>
-						
-						  <p class="h-32 md:h-24 mb-4 text-base font-normal text-gray-700 dark:text-gray-400">
-							  {post.data.description}
-						  </p>
-						  
-			
-
-							<a href={`/blog/${post.slug}/`} type="button" class="border border-gray-300 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-5 py-2.5">
-								Leer artículo
+							
+								<a href={`/blog/${post.slug}/`} type="button" class="border border-gray-300 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm px-5 py-2.5">
+									Leer artículo
 								</a>  
-						  
-						</div>
+							
+							</div>
 						</div>
 						))
 					  }
@@ -95,7 +97,7 @@ const posts = (await getCollection('blog')).sort(
 			</section>
 			<br>
 			<hr class="dark:border-gray-800">
-		<section class="max-w-screen-lg mx-auto relative mt-16 px-6">
+		<section class="max-w-screen-lg mx-auto relative mt-8 px-6">
 		  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 			<div class="lg:order-first lg:row-span-2 lg:mt-32">
 			  <h2 class="text-5xl font-bold tracking-tight dark:text-white">

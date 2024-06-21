@@ -17,10 +17,13 @@ const { title, description, pubDate, url, heroImage } = Astro.props;
 		<BaseHead title={title} description={description} />
 	</head>
 
-	<body class="bg-gray-50 dark:bg-gray-900 relative">
-		
+	<body class="bg-spring-green-50 dark:bg-shark-950 relative">
+		<div class="noise"></div>
+		<div class="flare pulsate-bck"></div>
+    	<div class="flare2 pulsate-bck"></div>
+    	<div class="flare3 pulsate-bck"></div>
 		<FabTop/>
-		<div class="bg-white dark:bg-gray-900 max-w-screen-xl mx-auto border  border-gray-200 dark:border-gray-800">
+		<div class="bg-white dark:bg-shark-950 max-w-screen-xl mx-auto border  border-gray-200 dark:border-gray-800 relative">
 			<Header />
 		<main class="max-w-screen-lg mx-auto">
 			<article class="p-6">
